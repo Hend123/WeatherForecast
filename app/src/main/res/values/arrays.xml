@@ -1,0 +1,41 @@
+<resources>
+<!--    location option-->
+    <string-array name="location_entries">
+        <item>@string/gps</item>
+        <item>@string/maps</item>
+    </string-array>
+    <string-array name="location_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <!--    temp option-->
+    <string-array name="temp_units_entries">
+        <item>@string/kelvin</item>
+        <item>@string/Celsius</item>
+        <item>@string/Fahrenheit</item>
+    </string-array>
+    <string-array name="temp_units_values">
+        <item>kelvin</item>
+        <item>celsius</item>
+        <item>fahrenheit</item>
+    </string-array>
+    <!--    wind speed option-->
+    <string-array name="wind_speed_entries">
+        <item>@string/metre_sec</item>
+        <item>@string/miles_hour</item>
+    </string-array>
+    <string-array name="wind_speed_values">
+        <item>metre_sec</item>
+        <item>miles_hour</item>
+    </string-array>
+<!--    language option-->
+    <string-array name="language_entries">
+        <item>@string/Arabic</item>
+        <item>@string/English</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>ar</item>
+        <item>en</item>
+    </string-array>
+
+</resources>

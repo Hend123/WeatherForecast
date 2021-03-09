@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الطقس</string>
+    <string name="home">الرئسية</string>
+    <string name="favorite">المفضلات</string>
+    <string name="alerts">المنبهات</string>
+    <string name="settings">الاعدادات</string>
+    <string name="title_of_dailog_gps_or_map">"من فضلك اخل اى طريقة لتحديد الموقع "</string>
+    <string name="gps">القمر الصناعى</string>
+    <string name="maps">الخريطة</string>
+    <string name="humidity">الرطوبة</string>
+    <string name="clouds">الغيوم</string>
+    <string name="pressure">الضغط</string>
+    <string name="wind_speed">سرعة الرياح</string>
+    <string name="you_can_t_press_more_than_one_click_but_you_can_drag_the_marker">تستطيع الضغط اكتر من مرة ومسح العلامة و سحب العلامة</string>
+    <string name="delete">مسح</string>
+    <string name="done">تم</string>
+    <string name="enter_date">ادخل التاريخ:</string>
+    <string name="with_sound">بصوت</string>
+    <string name="without_sound">بدون صوت</string>
+    <string name="enter_time">ادخل الوقت:</string>
+    <string name="location">الموقع</string>
+    <string name="switch_off_on">"قفل وفتح "</string>
+    <string name="determine_by_maps">اضغط لتحديد الموقع بواسطة الخريطة</string>
+    <string name="units">الوحدات</string>
+    <string name="determine_temp">حدد وحدة درجة الحرارة</string>
+    <string name="determine_wind">حدد وحدة سرعة الرياح</string>
+    <string name="select_lang">اختار اللغة</string>
+    <string name="alert">المنبة</string>
+    <string name="English">الانجليزية</string>
+    <string name="Arabic">العربى</string>
+    <string name="miles_hour">ملى/ساعة</string>
+    <string name="metre_sec">متر/ثانية</string>
+    <string name="Celsius">السلسيوس</string>
+    <string name="Fahrenheit">الفهرنهايت</string>
+    <string name="kelvin" translatable="false">الكلفن</string>
+    <string name="unknown_place">مكان مجهول</string>
+    <string name="udpate_lang">اعد تشغيل الابلكشن من اجل تحديث اللغة</string>
+    <string name="please_e_d_t">من فضلك ادخل الوقت والتاريخ</string>
+    <string name="no_alert">لا يوجد منبة</string>
+    <string name="load_data">تحميل البيانات , من فضلك انتظر</string>
+    <string name="notification">اشعارات</string>
+    <string name="alarm">منبة</string>
+    <string name="set_alarm">تم بنجاج</string>
+
+
+
+
+</resources>

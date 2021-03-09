@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="hourlyItem"
+            type="com.example.weatherforecast.pojo.HourlyWeather" />
+        <!--        <variable-->
+        <!--            name="weatherIcon"-->
+        <!--            type="String" />-->
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/hourlyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:displayTime="@{hourlyItem.dt}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hourlyIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5:15 Pm" />
+
+        <ImageView
+            android:id="@+id/hourlyIcon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/hourly_icon"
+            app:layout_constraintEnd_toEndOf="@id/hourlyTime"
+            app:layout_constraintLeft_toLeftOf="@id/hourlyTime"
+            app:layout_constraintRight_toRightOf="@id/hourlyTime"
+            app:layout_constraintStart_toStartOf="@id/hourlyTime"
+            app:layout_constraintTop_toBottomOf="@id/hourlyTime"
+            app:loadImage="@{hourlyItem.icon}"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/hourlyTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/hourlyIcon"
+            app:layout_constraintLeft_toLeftOf="@id/hourlyIcon"
+            app:layout_constraintRight_toRightOf="@id/hourlyIcon"
+            app:layout_constraintStart_toStartOf="@id/hourlyIcon"
+            app:layout_constraintTop_toBottomOf="@id/hourlyIcon"
+            app:tempUnits="@{hourlyItem.temp}"
+            tools:text="35.5 C" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

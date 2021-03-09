@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/location">
+        <SwitchPreference
+            app:key="gps"
+            app:title="@string/gps"
+            app:summary="@string/switch_off_on"
+            app:defaultValue="false"
+            android:disableDependentsState="true"/>
+        <Preference
+            app:dependency="gps"
+            app:summary="@string/determine_by_maps"
+            app:title="@string/maps"
+            app:key="maps">
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/units">
+
+        <ListPreference
+            app:defaultValue="@string/kelvin"
+            app:entries="@array/temp_units_entries"
+            app:entryValues="@array/temp_units_values"
+            app:key="temp_units"
+            app:title="@string/determine_temp"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+        <ListPreference
+            app:defaultValue="metre_sec"
+            app:entries="@array/wind_speed_entries"
+            app:entryValues="@array/wind_speed_values"
+            app:key="wind_speed"
+            app:title="@string/determine_wind"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Language">
+
+        <ListPreference
+            app:defaultValue="en"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:key="lang"
+            app:title="@string/select_lang"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/alert">
+
+    <SwitchPreference
+        app:key="alert"
+        app:title="@string/alert"
+        app:summary="@string/switch_off_on"
+        app:defaultValue="true"
+        android:disableDependentsState="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
